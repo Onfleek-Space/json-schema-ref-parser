@@ -6,10 +6,10 @@ export default defineConfig({
   outDir: "dist",
   dts: true, // Generate declaration file (.d.ts)
   splitting: false,
-  shims: true,
+  // shims: true,
   sourcemap: "inline",
   clean: true,
-  minify: true,
+  minify: false,
   target: [
     "chrome88",
     "deno1",
@@ -23,5 +23,5 @@ export default defineConfig({
     "opera74",
     // "rhino7",
     "safari12",
-  ]
+  ],
 });
